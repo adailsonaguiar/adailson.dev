@@ -6,13 +6,14 @@ import { type ContactEmailTemplateProps } from '@/types'
 export const runtime = 'edge'
 export const dynamic = 'force-dynamic'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+//const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
   const { firstName, lastName, email, message } =
     (await request.json()) as ContactEmailTemplateProps
 
   try {
+    /*
     const { data, error } = await resend.emails.send({
       from: 'Adailson Aguiar <Portfolio>',
       to: 'adailsonacj@live.com',
@@ -36,6 +37,7 @@ export async function POST(request: Request) {
       status: 200,
       body: { message: data }
     })
+    */
   } catch (error) {
     return NextResponse.json({
       status: 500,
