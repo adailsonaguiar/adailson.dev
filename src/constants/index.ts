@@ -17,7 +17,7 @@ export const data = {
 
 export const navLinks = [
   { title: 'Sobre', label: 'about', url: '/' },
-  { title: 'Carreira', label: 'career', url: '/career' },
+  //{ title: 'Carreira', label: 'career', url: '/career' },
   //{ title: 'Projetos', label: 'projects', url: '/projects' },
   //{ title: 'Contact', label: 'contact', url: '/contact' }
 ]
